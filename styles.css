@@ -1,0 +1,52 @@
+#game{
+    border: 5px solid black;
+    height:500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+#block{
+    height:500px;
+    width:50px;
+    background-color: green;
+    position: absolute;
+    left:500px;
+    top: 0;
+    animation: block-move 3s linear infinite;
+
+}
+
+
+@keyframes block-move{
+    0% {left: 500px;}
+    100%{left: -50px;}
+}
+
+
+
+#hole{
+    height:200px;
+    width:50px;
+    background-color: white;
+
+
+    position: absolute;
+    left:500px;
+    top: 300px;
+    animation: block-move 3s linear infinite;
+    
+
+}
+
+#player{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    position: absolute;
+    top:0;
+    left: 0;
+
+}
